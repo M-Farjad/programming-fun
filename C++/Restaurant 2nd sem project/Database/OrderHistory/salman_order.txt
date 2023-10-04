@@ -1,0 +1,4 @@
+January 3 S0 S1 S3 
+January 4 S0 P0 P3 E0 
+January 3 S1 S2 S3 
+January 6 S0 S5 S4 P3 P2 P4 

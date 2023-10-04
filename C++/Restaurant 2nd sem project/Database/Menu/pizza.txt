@@ -1,0 +1,6 @@
+Special_Pizza 16.80
+Kobab_Pizza 17.80
+Malai_Pizza 16.45
+Tikka_Pizza 15.80
+Hot&Spicy_Pizza 14.80
+Chesse_Pizza 10.80

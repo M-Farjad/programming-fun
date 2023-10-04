@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value="M.Farjad"/>
+        <attribute name="authors" value="The Jester"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-12 01:36:12 PM"/>
+        <attribute name="created" value="QWRtaW47U1VQRVJURUNIU1lTLVBDOzIwMjItMDItMjU7MDc6MTY6MDggUE07MjkwOA=="/>
+        <attribute name="edited" value="QWRtaW47U1VQRVJURUNIU1lTLVBDOzIwMjItMDMtMTI7MDE6MzY6MTIgUE07MzszMDA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="The Jester..&#13;&#10;"/>
+            <comment text="2021-SE-56"/>
+            <declare name="a, b, c, X1, X2, i, j" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter a number: &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;enter another number: &quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;enter last no: &quot;" newline="True"/>
+            <input variable="c"/>
+            <assign variable="j" expression="((b*b)-4*a*c)"/>
+            <if expression="j&gt;0">
+                <then>
+                    <assign variable="i" expression="sqrt(j)"/>
+                    <assign variable="X1" expression="((b*-1)+i)/(2*a)"/>
+                    <assign variable="X2" expression="((b*-1)-i)/(2*a)"/>
+                    <output expression="&quot;one root is &quot;&amp;X1" newline="True"/>
+                    <output expression="&quot;another root is &quot;&amp;X2" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;roots are complex&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

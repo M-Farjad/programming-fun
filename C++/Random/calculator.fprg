@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value="Muhammad Farjad"/>
+        <attribute name="authors" value="The Jester"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-25 07:30:46 PM"/>
+        <attribute name="created" value="U1NDO0RFU0tUT1AtSk9VM084NDsyMDIyLTAxLTMxOzAxOjA1OjQ1IHBtOzI2MjY="/>
+        <attribute name="edited" value="U1NDO0RFU0tUT1AtSk9VM084NDsyMDIyLTAxLTMxOzA0OjQ1OjU2IHBtOzc7Mjc0OQ=="/>
+        <attribute name="edited" value="QWRtaW47U1VQRVJURUNIU1lTLVBDOzIwMjItMDItMjU7MDc6MzA6NDYgUE07MjszMDE1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Z" type="Integer" array="False" size=""/>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter 1st value: &quot;" newline="True"/>
+            <input variable="x"/>
+            <declare name="y" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter 2nd value: &quot;" newline="True"/>
+            <input variable="y"/>
+            <output expression="&quot;Enter number for operation  &#13;&#10;1.ADD                     &#13;&#10;2.SUBTRACT                     &#13;&#10;3.DIVIDE                   &#13;&#10;4.MODULUS                   &#13;&#10;5.DIVIDE                 &quot;" newline="True"/>
+            <input variable="Z"/>
+            <if expression="Z==1">
+                <then>
+                    <call expression="sum(x,y)"/>
+                </then>
+                <else>
+                    <if expression="Z==2">
+                        <then>
+                            <call expression="subtract(x,y)"/>
+                        </then>
+                        <else>
+                            <if expression="Z==3">
+                                <then>
+                                    <call expression="divide(x,y)"/>
+                                </then>
+                                <else>
+                                    <if expression="Z==4">
+                                        <then>
+                                            <call expression="modulus(x,y)"/>
+                                        </then>
+                                        <else>
+                                            <if expression="Z==5">
+                                                <then>
+                                                    <call expression="divide(x,y)"/>
+                                                </then>
+                                                <else/>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="divide" type="None" variable="num1/num2">
+        <parameters>
+            <parameter name="num1" type="Integer" array="False"/>
+            <parameter name="num2" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <output expression="num1/num2" newline="True"/>
+        </body>
+    </function>
+    <function name="modulus" type="None" variable="num1%num2">
+        <parameters>
+            <parameter name="num1" type="Integer" array="False"/>
+            <parameter name="num2" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <output expression="num1%num2" newline="True"/>
+        </body>
+    </function>
+    <function name="multiply" type="None" variable="num1*num2">
+        <parameters>
+            <parameter name="num1" type="Integer" array="False"/>
+            <parameter name="num2" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <output expression="num1*num2" newline="True"/>
+        </body>
+    </function>
+    <function name="subtract" type="None" variable="num1-num2">
+        <parameters>
+            <parameter name="num1" type="Integer" array="False"/>
+            <parameter name="num2" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <output expression="num1-num2" newline="True"/>
+        </body>
+    </function>
+    <function name="sum" type="None" variable="num1 + num2">
+        <parameters>
+            <parameter name="num1" type="Integer" array="False"/>
+            <parameter name="num2" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <output expression="num1 + num2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

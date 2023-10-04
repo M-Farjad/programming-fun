@@ -1,0 +1,101 @@
+//class declarations
+//header files
+
+
+class GPA {
+private:
+    float english,
+        urdu,
+        islamiyat,
+        math,
+        pakStudies,
+        physics,
+        gpa;
+
+    int T_credit_hours;
+
+public:
+    //member functions
+    GPA();
+    float getPercentage();
+    void setCredit(int);
+    void setGpa(float);
+    float getGpa();
+    void print();
+};
+
+
+//class definitions
+#include"Gpa.h"
+#include<iostream>
+using namespace std;
+
+GPA::GPA()
+{
+    cout << "Enter Marks (?/100)  English : ";
+    cin >> english;
+    cout << "Enter Marks (?/100)  Urdu : ";
+    cin >> urdu;
+    cout << "Enter Marks (?/100)   Islamiyat : ";
+    cin >> islamiyat;
+    cout << "Enter Marks (?/100)  Math : ";
+    cin >> math;
+    cout << "Enter Marks (?/100)  PakStudies : ";
+    cin >> pakStudies;
+    cout << "Enter Marks (?/100)  Physics : ";
+    cin >> physics;
+}
+
+float GPA:: getPercentage(void)
+{
+    return ((english + urdu + islamiyat + math + pakStudies + physics) / 600) * 100;
+}
+void GPA::setGpa(float Gpa) {
+    gpa = Gpa;
+}
+void GPA::setCredit(int C) {
+    T_credit_hours = C;
+}
+float GPA::getGpa() {
+    return gpa / T_credit_hours;
+}
+void GPA::print()
+{
+    cout << "The Percentage is : " << getPercentage() << "% " << endl;
+    cout << "THe Gpa is: " << getGpa() << endl;
+}
+
+
+//main program
+
+/*
+by entering marks in private members calculate percantage
+then calculate GPA by that numbers
+*/
+
+
+#include <iostream>
+#include <string >
+#include"Gpa.h"
+using namespace std;
+
+
+int main()
+{
+    /*GPA marks;
+    ptr = &marks;*/
+
+    int credit;
+    float gpa;
+    GPA* ptr = new GPA;
+    cout << "Enter the total no of credit hours: ";
+    cin >> credit;
+    cout << "Enter the total added gpa of subjects: ";
+    cin >> gpa;
+
+    ptr->setGpa(gpa);
+    ptr->setCredit(credit);
+    cout << "==============================================" << endl;
+    cout << "The total gpa is: " << ptr->getGpa();
+    ptr->print();
+}
