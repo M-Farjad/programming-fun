@@ -64,29 +64,17 @@ public class LabTasks {
         System.out.printf("Parent Savings bonds: %.2f", parentsSavingsBonds);
     }
 
-    public static void w3Schools() {
-
-        // Date
-        // Array
-        // Array list
-        // Linked list
-        // Hashmap
-        // Hashset
-        //write examples of above mentioned data structures
-        
-    }
-
     public static void main(String[] args) throws FileNotFoundException {
         // File Handling
         sumFromfile();
 
         // Fibonacci
-        fibonacci(10);
+        // fibonacci(10);
 
         // Store
-        markUpCalc(100, 10, 5);
+        // markUpCalc(200, 22, 7);
 
         // Summer Job
-        job(5.5, 40);
+        // job(4, 38);
     }
 }
