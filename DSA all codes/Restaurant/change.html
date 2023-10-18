@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>change-flag</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            
+         
+        }
+        .page-title{
+            padding: 0px;
+            margin: 0px;
+            color: #006230;
+    padding-top: 0;
+    margin-top: 15px;
+    margin-bottom: 0;
+            font-style: bold;
+            font-size: 32px;
+            font-weight: 700;
+        }
+        .page-text{
+            font-size: 17px;
+    line-height: 25px;
+    
+    font-weight: 300;
+    color: #353535;
+  
+        }
+        .h1{
+            
+        }
+
+        .col-heading {
+            font-weight: 700;
+            font-size: 21px;
+            color: #028940;
+            margin-bottom: 20px;
+
+        }
+
+        .col-element {}
+
+        .col-h-l {
+            text-align: left;
+            
+        }
+
+        .col-h-r {
+            text-align:right;
+        }
+
+        .col-e-l {
+            font-weight: 400;
+            text-transform: none;
+            color: #747474;
+            text-decoration: none;
+            text-align: left;
+        }
+
+        .col-e-r {
+            text-align: right;
+            font-size: 15px;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            font-weight: 300;
+            text-transform: uppercase;
+            color: #747474;
+            line-height: 20px;
+        }
+
+        .link-text {
+            text-decoration: none;
+            color: #747474;
+        }
+
+        .link-text:hover {
+            text-decoration: underline;
+            color: #00572D;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid d-inline-block w-75 position-relative top-0 start-50 translate-middle-x  shadow   bg-body "
+        style="border: 1px solid gray; z-index: 2;">
+        <header class="container d-inline " style="position: abosulte; ">
+            <!-- logo , flag, name , change -->
+            <a href="home.html"><img src="images/home/logo.png" class="img-fluid" alt="" id="logo"
+                    class="first-row"></a>
+
+            <div id="flag-changing">
+                <img src="images/home/flag_pakistan.png" class="img-fluid" alt="" class="first-row">
+                <p style="display: inline-block; color: #747474;">Pakistan |</p>
+                <a href="change.html" target="_blank" style="color: #747474; text-align: center;">Change</a>
+            </div>
+            <!-- navbar  -->
+            <nav class="navbar navbar-expand-lg bg-light ">
+                <div class="container-fluid align-content-center">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style=" margin: auto auto;  ">
+                            <li class="nav-item">
+                                <div class="btn-group ">
+                                    <a class="btn btn-outline-success dropdown-toggle nav-btn  " href="Location.html"
+                                        role="button" aria-expanded="false">Locations</a>
+                                    <ul class="dropdown-menu "
+                                        style="width: 60vh;height: 40vh; padding: 10px; background-image: url('images/home/nav1.png');   background-repeat: no-repeat; background-size: 100% ; box-shadow:inset 0 0 25px #24a344;">
+                                        <li>
+                                            <p class="nav-item-heading">Find A Restaurant</p>
+                                        </li>
+                                        <li><input type="text " style="width: 80%;"> <a
+                                                class="btn btn-success rounded-pill" style="width: 15%;"
+                                                href="http://www.google.com" role="button">Go
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <p class="dropdown-item-text position-absolute bottom-0 start-0 w-100 fw-bold text-center m-0"
+                                                style="color:#DEEBD3; background-color:#00572D;   ">36838
+                                                SUBWAY<sup>®</sup>
+                                                RESTAURANTS IN 106 COUNTAIRES </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="btn-group ">
+                                    <a class="btn btn-outline-success dropdown-toggle nav-btn  "
+                                        href="http://www.google.com" role="button" aria-expanded="false">
+                                        Menu and Nutrition
+                                    </a>
+                                    <ul class="dropdown-menu m-0 "
+                                        style="width: 60vh;height: 40vh; padding: 10px; background-image: url('images/home/nav2.jpg');   background-repeat: no-repeat; background-size: 50% ; background-position: right bottom; box-shadow:inset 0 0 25px #24a344;">
+                                        <div class="d-flex flex-row  my-0">
+
+                                            <div class="p-2 flex-fill my-0">
+                                                <li>
+                                                    <h3 class="nav-item-heading">Menu</h3>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Ciabatta Panini</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Super Savors</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">All Sandwiches</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Salads</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Side, Drinks &
+                                                        Extras</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Bread, Toppings &
+                                                        Extras</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">How to order</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                            </div>
+
+                                            <div class="p-2 flex-fill my-0">
+                                                <li>
+                                                    <h3 class="nav-item-heading">Nutritents</h3>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Menu Nutritents
+                                                        FAQs</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Nutrition
+                                                        Information</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                            </div>
+
+                                        </div>
+                                        <li>
+                                            <p class="dropdown-item-text position-absolute bottom-0 start-0 w-100 fw-bold text-center m-0"
+                                                style="color:#DEEBD3; background-color:#00572D;   ">Make it our way</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="btn-group">
+                                    <a class="btn btn-outline-success dropdown-toggle nav-btn  "
+                                        href="http://www.google.com" role="button" aria-expanded="false">
+                                        Catering
+                                    </a>
+                                    <ul class="dropdown-menu m-0 "
+                                        style="width: 55vh;height: 40vh; padding: 10px; background-image: url('images/home/nav3.jpg');   background-repeat: no-repeat;  background-position:right bottom; box-shadow:inset 0 0 25px #24a344;">
+                                        <div class="d-flex flex-row  my-0">
+
+                                            <div class="p-2 my-0 ">
+                                                <li>
+                                                    <h3 class="nav-item-heading">SUBWAY<sup>®</sup> Catering </h3>
+                                                </li>
+                                                <li class="dropdown-divider   m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Catering Menu </a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Catering Planning
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Catering FAQs</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+
+                                            </div>
+
+
+
+                                        </div>
+                                        <li>
+                                            <p class="dropdown-item-text position-absolute bottom-0 start-0 w-100 fw-bold text-center m-0"
+                                                style="color:#DEEBD3; background-color:#00572D;   ">MAKE YOUR NEXT EVENT
+                                                HIT
+                                                WITH A SUBWAY</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-outline-success dropdown-toggle nav-btn  "
+                                    href="http://www.google.com" role="button" aria-expanded="false">Contact
+                                    us</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="btn-group">
+                                    <a class="btn btn-outline-success dropdown-toggle nav-btn  "
+                                        href="http://www.google.com" role="button" aria-expanded="false">
+                                        About Us
+                                    </a>
+                                    <ul class="dropdown-menu m-0 "
+                                        style="width: 60vh;height: 40vh; padding: 10px; background-image: url('images/home/nav4.jpg');   background-repeat: no-repeat; background-position:right; box-shadow:inset 0 0 25px #24a344;">
+                                        <div class="d-flex flex-row  my-0">
+
+                                            <div class="p-2 my-0 ">
+                                                <li>
+                                                    <h3 class="nav-item-heading">About SUBWAY<sup>®</sup></h3>
+                                                </li>
+                                                <li class="dropdown-divider   m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">History</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success  text-nowrap "
+                                                        href="http://www.google.com" role="button">LATEST NEWS /
+                                                        PRESS RELEASES</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Explore our world</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Social
+                                                        Responsiblity</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Subway FAQs</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Contact Us</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                            </div>
+                                        </div>
+                                        <li>
+                                            <p class="dropdown-item-text position-absolute bottom-0 start-0 w-100 fw-bold text-center m-0"
+                                                style="color:#DEEBD3; background-color:#00572D;   ">SUBWAY - EAT FRESH,
+                                                LIVE
+                                                GREEN</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="btn-group">
+                                    <a class="btn btn-outline-success dropdown-toggle nav-btn  "
+                                        href="http://www.google.com" role="button" aria-expanded="false">
+                                        Careers
+                                    </a>
+                                    <ul class="dropdown-menu m-0 "
+                                        style="width: 60vh;height: 40vh; padding: 10px; background-image: url('images/home/nav5.jpg');   background-repeat: no-repeat; background-position:right bottom; box-shadow:inset 0 0 25px #24a344;">
+                                        <div class="d-flex flex-row  my-0">
+
+                                            <div class="p-2 my-0 ">
+                                                <li>
+                                                    <h3 class="nav-item-heading">SUBWAY<sup>®</sup> Careers</h3>
+                                                </li>
+                                                <li class="dropdown-divider   m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Headquaters Jobs</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Local Restaurant
+                                                        Jobs</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Regional Jobs</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success  text-nowrap  "
+                                                        href="http://www.google.com" role="button">View Our
+                                                        Franchise Oppourtunities</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                            </div>
+
+
+
+                                        </div>
+                                        <li>
+                                            <p class="dropdown-item-text position-absolute bottom-0 start-0 w-100 fw-bold text-center m-0"
+                                                style="color:#DEEBD3; background-color:#00572D;   ">GREAT PEOPLE, GREAT
+                                                SANDWICHES</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="btn-group">
+                                    <a class="btn btn-outline-success dropdown-toggle nav-btn  "
+                                        href="http://www.google.com" role="button" aria-expanded="false">
+                                        Own a Franchise
+                                    </a>
+                                    <ul class="dropdown-menu m-0 position-absolute " style="  width: 60vh;height: 40vh; padding: 10px; background-image: url('images/home/nav6.jpg');   background-repeat: no-repeat; background-position:right; box-shadow:inset 0 0 25px #24a344;
+                                            position: absolute; left: -7rem;">
+                                        <div class="d-flex  my-0 ">
+
+                                            <div class="p-2 my-0 ">
+                                                <li>
+                                                    <h3 class="nav-item-heading w-100">Own a Franchise</h3>
+                                                </li>
+                                                <li class="dropdown-divider   m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Why Chose SUBWAY?</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Your Next Step</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Apply To Own</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Attend A Seminar</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Register Your
+                                                        Interest</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Franchising FAQs
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success  text-nowrap  "
+                                                        href="http://www.google.com" role="button">Contact Franchise
+                                                        Sales</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Submit A Locations
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+
+                                            </div>
+
+
+
+                                        </div>
+                                        <li>
+                                            <p class="dropdown-item-text position-absolute bottom-0 start-0 w-100 fw-bold text-center m-0"
+                                                style="color:#DEEBD3; background-color:#00572D;   ">ALL ABOUT
+                                                FRANCHISING
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            </span>
+
+        </header>
+        <div class="container-fluid">
+            <h1 class="page-title" >Explore Our World</h1>
+            <hr>
+            <p class="page-text">Subway is a truly global brand. There are more Subway restaurants in the world than any other restaurant
+                chain!* Visit our international websites by selecting an option below. </p>
+            <div class="container-fluid ">
+                <div class="row row-cols-2">
+                    <div class="col p-1 ">
+                        <div class="row  p-0 m-0 text-nowrap">
+                            <div class="col-4 col-heading col-h-l ">
+                                Locations
+                            </div>
+                            <div class="col-4 offset-4 col-heading col-h-r ">
+                                #of Restaurants
+                            </div>
+                            <hr>
+                            <!-- element start -->
+                            <!-- 1-10  -->
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/1.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/2.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/3.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/4.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/5.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/6.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/7.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/8.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/9.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/10.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <!-- 11-20  -->
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/11.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/12.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/13.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/14.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/15.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/16.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/17.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/18.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/19.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/20.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <!-- 21-30  -->
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/21.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/22.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/23.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/24.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/25.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/26.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/27.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/28.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/29.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/30.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <!-- 31-40  -->
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/31.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/32.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/33.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/34.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/35.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/36.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/37.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/38.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/39.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/40.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <!-- 41-50  -->
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/41.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/42.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/43.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/44.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/45.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/46.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/47.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/48.gif"
+                                        alt="">
+                                    PAKISTAN</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                101
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/49.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                5
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/50.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <!-- 41-50  -->
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/51.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/52.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/53.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/54.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-1 ">
+                        <div class="row  p-0 m-0 text-nowrap">
+                            <div class="col-4 col-heading col-h-l ">
+                                Locations
+                            </div>
+                            <div class="col-4 offset-4 col-heading col-h-r ">
+                                #of Restaurants
+                            </div>
+                            <hr>
+                            <!-- element start -->
+                            <!-- element start -->
+                            <!-- 55-64  -->
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/55.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/56.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/57.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/58.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/59.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/60.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/61.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/62.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/63.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/64.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <!-- 65-74  -->
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/65.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/66.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/67.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/68.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/69.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/70.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/71.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/72.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/73.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/74.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <!-- 75-84  -->
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/75.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/76.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/77.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/78.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/79.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/80.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/81.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/82.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/83.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/84.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <!-- 85-94  -->
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/85.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/86.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/87.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/88.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/89.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/90.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/91.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/92.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/93.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/94.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <!-- 41-50  -->
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/96.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/97.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/98.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/99.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/100.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/101.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/102.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/103.gif"
+                                        alt="">
+                                    PAKISTAN</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                101
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/104.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                5
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/105.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <!-- 41-50  -->
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/106.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/107.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/108.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                            <div class="col-4 col-element col-e-l ">
+                                <a href="home.html" target="_blank" class="link-text"><img src="images/flag/109.gif"
+                                        alt="">
+                                    pakistan</a>
+                            </div>
+                            <div class="col-4 offset-4 col-element col-e-r">
+                                4
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+        </div>
+        <!-- 3-Buttons  -->
+        <div class="container " style="background-color: white;">
+
+
+            <nav class="navbar navbar-expand-lg   ">
+                <div class="d-flex w-100 text-center flex-wrap" style="margin:2% auto ; padding:0px auto">
+
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style=" margin: auto auto;  ">
+                            <li class="nav-item p-2 f-item ">
+                                <div class="btn-group dropup p-0">
+                                    <a class="btn btn-outline-primary dropdown-toggle nav-btn-f p-2 m-0 "
+                                        href="http://www.google.com" role="button" aria-expanded="false" style="color: #ffffff;
+                                    background-color: #0E82AF !important;
+                                    border: 1px solid #0E82AF !important;
+                                ">Locations</a>
+                                    <ul class="dropdown-menu f-btn-1"
+                                        style="position: absolute; left: -0.6rem; top: -18.5rem;">
+
+
+                                        <li>
+                                            <p class="dropdown-item-text position-absolute top-0 start-0 w-100 fw-bold  m-0"
+                                                style="color:white;  background-color: #0E82AF; font-size: 21px;   ">
+                                                View
+                                                Your Menu </p>
+                                            <button type="button" class="btn-close position-absolute end-0 px-3 "
+                                                aria-label="Close"></button>
+                                        </li>
+
+                                        <div class="p-0 px-2 text-start  text-wrap " style="margin-top:5% ;">
+                                            <h3 class="f-btn-text" style="padding-left: 35%;">Whatever you're in the
+                                                mood
+                                                for, SUBWAY® has a wide variety of Subs, salads, and sides to choose
+                                                from.
+                                                Every one of our Subs is made fresh in front of you, exactly the way you
+                                                want it!
+                                            </h3>
+                                        </div>
+                                        <div class="p-0 px-2 text-start  text-wrap ">
+                                            <a class="btn btn-success f-btn-btn p-2  " href="http://www.google.com"
+                                                role="button" aria-expanded="false"
+                                                style="  font-size: medium;  margin-left:35% ;  ">Learn More</a>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item p-2 mx-4  f-item-2">
+                                <div class="btn-group dropup p-0">
+                                    <a class="btn btn-outline-primary dropdown-toggle nav-btn-f p-2 m-0 "
+                                        href="http://www.google.com" role="button" aria-expanded="false" style="    color: #ffffff !important;
+                                    background-color: #DE3804 !important;
+                                    border: 1px solid #DE3804 !important;">Join Our Team</a>
+
+                                </div>
+                            </li>
+                            <li class="nav-item p-2 f-item  ">
+                                <div class="btn-group dropup p-0">
+                                    <a class="btn btn-outline-primary dropdown-toggle nav-btn-f p-2 m-0 "
+                                        href="http://www.google.com" role="button" aria-expanded="false" style="     color: #006230;
+                                    background-color: #ffc20d;
+                                    border: 1px solid #ffc20d;">Own A Franchise</a>
+
+                                    <ul class="dropdown-menu f-btn-3  "
+                                        style="position: absolute; left: -37.1rem; top: -18.5rem;">
+                                        <li>
+                                            <p class="dropdown-item-text position-absolute top-0 start-0 w-100 fw-bold  m-0"
+                                                style=" color: #006230; background-color: #ffc20d;  font-size: 21px;">
+                                                Own A
+                                                Franchise</p>
+                                            <button type="button" class="btn-close position-absolute end-0 px-3 "
+                                                aria-label="Close"></button>
+                                        </li>
+                                        <div class="pt-5 px-2 text-start ">
+                                            <h3 class="f-btn-title" style="color: #b8a435;">Want to Own Your <u>Own</u>
+                                                Restaurant?
+                                            </h3>
+                                        </div>
+                                        <div class="p-0 px-2 text-start  text-wrap ">
+                                            <h3 class="f-btn-text" style="width: 70%;">When you own a SUBWAY®
+                                                restaurant,
+                                                you’re part of the
+                                                world’s largest
+                                                restaurant chain and one of its most recognized brands. Join the team
+                                                today!
+                                            </h3>
+                                        </div>
+                                        <div class="p-0 px-2 text-start  text-wrap ">
+                                            <a class="btn btn-success f-btn-btn p-2 m-0 " href="http://www.google.com"
+                                                role="button" aria-expanded="false"
+                                                style="  font-size: medium;   ">Learn
+                                                More</a>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </li>
+
+
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <br>
+        <br>
+        </div>
+        
+
+
+
+            <!-- Fotter  -->
+            <footer class="container-fluid position-relative " style="z-index:3; top: -2vh;">
+
+
+                <!-- <div class="container">
+            <div class="d-flex w-75 text-center flex-wrap" style="margin:2% auto ; padding:0px auto">
+                
+                <div class="p-2 flex-fill">Flex item</div>
+                <div class="p-2 flex-fill">Flex item</div>
+                <div class="p-2 flex-fill">Flex item</div>
+              </div>
+        </div> -->
+                <!-- footer  -->
+                <div class="container-fluid w-100    "
+                    style="background-image:url('images/home/f-bg.png') ; height: 25vh; color: #747474; padding: 0px 15vh; ">
+                    <div class="d-flex flex-wrap flex-column p-3 w-100  " style="margin: 0px auto ;">
+                        <div class=" d-flex justify-content-evenly flex-wrap  " style="color: #A4A4A4;">
+                            <div class="p-2 ">
+                                <h6 class="f-heading m-">Management</h6>
+                                <p><a class="f-link" target="_blank" href="http://">Subway Partners<sup>TM</sup></a></p>
+                                <p><a class="f-link" target="_blank" href="http://">Careers</a></p>
+                            </div>
+                            <div class="p-2 ">
+                                <h6 class="f-heading">Social</h6>
+                                <p><a class="f-link" target="_blank" href="http://">Like Us On Facebook</a></p>
+                            </div>
+                            <div class="p-2 ">
+                                <h6 class="f-heading">Related Sites</h6>
+                            </div>
+                            <div class="p-2 ">
+                                <h6 class="f-heading">Profhile Management</h6>
+                                <p><a class="f-link" target="_blank" href="http://">contact us</a></p>
+                            </div>
+                            <div class="p-2 ">
+                                <h6 class="f-heading">Legal</h6>
+                                <p><a class="f-link" target="_blank" href="http://">Privacy Statement</a></p>
+                                <p><a class="f-link" target="_blank" href="http://">Term of Use</a></p>
+                            </div>
+                            <div class="p-2 ">
+                                <h6 class="f-heading">Accessibility</h6>
+                                <p><a class="f-link" target="_blank" href="http://">Adobe PDF Reader</a></p>
+                                <p><a class="f-link" target="_blank" href="http://">Adobe Flash Plugin</a></p>
+                            </div>
+
+
+                        </div>
+                        <div class="p-2 d-flex flex-column " style="COLOR:#353535; font-size: 15px; ">
+                            <div class="p-0 m-0 d-flex justify-content-center  ">
+                                <p class="f-d">SUBWAY® is a Registered Trademark of Subway IP LLC.</p>
+                            </div>
+                            <div class="p-0 m-0 d-flex justify-content-center ">
+                                <p class="f-d">© 2022 Subway IP LLC </p>
+                            </div>
+                            <div class="p-0 m-0 d-flex justify-content-center  ">
+                                <p class="f-d">All Rights Reserved.</p>
+                            </div>
+                            <div class="p-0 m-0 d-flex justify-content-center  ">
+                                <p class="f-d"><a class="f-link-d" target="_blank" href="http://">Cookie Settings</a>
+                                </p>
+                            </div>
+                            <!-- <p>SUBWAY® is a Registered Trademark of Subway IP LLC.</p>
+                <p>© 2022 Subway IP LLC</p>
+                <p>All Rights Reserved.</p> -->
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </footer>
+
+            <!-- JavaScript  -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+                crossorigin="anonymous"></script>
+
+</body>
+
+</html>

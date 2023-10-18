@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+    <style>
+        .page-title {
+
+            font-size: 32px;
+            color: #006230;
+            padding: 0px;
+            margin-top: 15px;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+
+        .page-text {
+            color: #747474;
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .grey-text {
+            color: #747474;
+        }
+
+        .question-title {
+            color: #006230;
+            font-size: 20px;
+            font-weight: bolder;
+            padding-bottom: 20px;
+
+        }
+
+        .question-heading {
+            text-decoration: none;
+            color: #353535;
+            border: 0px;
+            background-color: white;
+            font-size: 22px;
+
+        }
+
+        .question-heading:hover {
+            color: #006230;
+
+        }
+
+        .question-text {
+            color: #747474;
+            border: 0px;
+        }
+
+        .genral-btn {
+            color: #00572D;
+            background-color: #A4A4A4;
+            border: 1px solid black;
+        }
+
+        .genral-btn:hover {
+            color: #00572D;
+            background-color: #A4A4A4;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid d-inline-block w-75 position-relative top-0 start-50 translate-middle-x  shadow   bg-body "
+        style="border: 1px solid gray; z-index: 2;">
+        <header class="container " style="position: abosulte; ">
+            <!-- logo , flag, name , change -->
+            <a href="home.html"><img src="images/home/logo.png" class="img-fluid" alt="" id="logo"
+                    class="first-row"></a>
+
+            <div id="flag-changing">
+                <img src="images/home/flag_pakistan.png" class="img-fluid" alt="" class="first-row">
+                <p style="display: inline-block; color: #747474;">Pakistan |</p>
+                <a href="change.html" style="color: #747474; text-align: center;">Change</a>
+            </div>
+            <!-- navbar  -->
+            <nav class="navbar navbar-expand-lg bg-light ">
+                <div class="container-fluid align-content-center">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style=" margin: auto auto;  ">
+                            <li class="nav-item">
+                                <div class="btn-group ">
+                                    <a class="btn btn-outline-success dropdown-toggle nav-btn  " href="Location.html"
+                                        role="button" aria-expanded="false">Locations</a>
+                                    <ul class="dropdown-menu "
+                                        style="width: 60vh;height: 40vh; padding: 10px; background-image: url('images/home/nav1.png');   background-repeat: no-repeat; background-size: 100% ; box-shadow:inset 0 0 25px #24a344;">
+                                        <li>
+                                            <p class="nav-item-heading">Find A Restaurant</p>
+                                        </li>
+                                        <li><input type="text " style="width: 80%;">
+                                            <a class="btn btn-success rounded-pill" style="width: 15%;"
+                                                href="http://www.google.com" role="button">Go
+                                            </a>
+
+                                        </li>
+
+                                        <li>
+                                            <p class="dropdown-item-text position-absolute bottom-0 start-0 w-100 fw-bold text-center m-0"
+                                                style="color:#DEEBD3; background-color:#00572D;   ">36838
+                                                SUBWAY<sup>®</sup>
+                                                RESTAURANTS IN 106 COUNTAIRES </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="btn-group ">
+                                    <a class="btn btn-outline-success dropdown-toggle nav-btn  " href="menu.html"
+                                        target="_blank" role="button" aria-expanded="false">
+                                        Menu and Nutrition
+                                    </a>
+                                    <ul class="dropdown-menu m-0 "
+                                        style="width: 60vh;height: 40vh; padding: 10px; background-image: url('images/home/nav2.jpg');   background-repeat: no-repeat; background-size: 50% ; background-position: right bottom; box-shadow:inset 0 0 25px #24a344;">
+                                        <div class="d-flex flex-row  my-0">
+
+                                            <div class="p-2 flex-fill my-0">
+                                                <li>
+                                                    <h3 class="nav-item-heading">Menu</h3>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="menu_p1.html" target="_blank" role="button">Ciabatta
+                                                        Panini</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="menu_p2.html" target="_blank" role="button">Super
+                                                        Savors</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="menu_p3.html" target="_blank" role="button">All
+                                                        Sandwiches</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="menu_p4.html" target="_blank" role="button">Salads</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="menu_p5.html" target="_blank" role="button">Side, Drinks &
+                                                        Extras</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="menu_p6.html" target="_blank" role="button">Bread,
+                                                        Toppings &
+                                                        Extras</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="menu_p7.html" target="_blank" role="button">How to
+                                                        order</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                            </div>
+
+                                            <div class="p-2 flex-fill my-0">
+                                                <li>
+                                                    <h3 class="nav-item-heading">Nutritents</h3>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="nutritents.html" target="_blank" role="button">Menu
+                                                        Nutritents
+                                                        FAQs</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="nutritents.html" target="_blank" role="button">Nutrition
+                                                        Information</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                            </div>
+
+                                        </div>
+                                        <li>
+                                            <p class="dropdown-item-text position-absolute bottom-0 start-0 w-100 fw-bold text-center m-0"
+                                                style="color:#DEEBD3; background-color:#00572D;   ">Make it our way</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="btn-group">
+                                    <a class="btn btn-outline-success dropdown-toggle nav-btn  " href="carrers.html"
+                                        target="_blank" role="button" aria-expanded="false">
+                                        Catering
+                                    </a>
+                                    <ul class="dropdown-menu m-0 "
+                                        style="width: 55vh;height: 40vh; padding: 10px; background-image: url('images/home/nav3.jpg');   background-repeat: no-repeat;  background-position:right bottom; box-shadow:inset 0 0 25px #24a344;">
+                                        <div class="d-flex flex-row  my-0">
+
+                                            <div class="p-2 my-0 ">
+                                                <li>
+                                                    <h3 class="nav-item-heading">SUBWAY<sup>®</sup> Catering </h3>
+                                                </li>
+                                                <li class="dropdown-divider   m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="catering.html" target="_blank" role="button">Catering Menu
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="catering.html" target="_blank" role="button">Catering
+                                                        Planning
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="catering.html" target="_blank" role="button">Catering
+                                                        FAQs</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+
+                                            </div>
+
+
+
+                                        </div>
+                                        <li>
+                                            <p class="dropdown-item-text position-absolute bottom-0 start-0 w-100 fw-bold text-center m-0"
+                                                style="color:#DEEBD3; background-color:#00572D;   ">MAKE YOUR NEXT EVENT
+                                                HIT
+                                                WITH A SUBWAY</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-outline-success  nav-btn  " href="contact.html" target="_blank"
+                                    role="button" aria-expanded="false">Contact
+                                    us</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="btn-group">
+                                    <a class="btn btn-outline-success dropdown-toggle nav-btn  " href="about.html"
+                                        target="_blank" aria-expanded="false">
+                                        About Us
+                                    </a>
+                                    <ul class="dropdown-menu m-0 "
+                                        style="width: 60vh;height: 40vh; padding: 10px; background-image: url('images/home/nav4.jpg');   background-repeat: no-repeat; background-position:right; box-shadow:inset 0 0 25px #24a344;">
+                                        <div class="d-flex flex-row  my-0">
+
+                                            <div class="p-2 my-0 ">
+                                                <li>
+                                                    <h3 class="nav-item-heading">About SUBWAY<sup>®</sup></h3>
+                                                </li>
+                                                <li class="dropdown-divider   m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="about.html" target="_blank" role="button">History</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success  text-nowrap "
+                                                        href="about.html" target="_blank" role="button">LATEST NEWS /
+                                                        PRESS RELEASES</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="about.html" target="_blank" role="button">Explore our
+                                                        world</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="about.html" target="_blank" role="button">Social
+                                                        Responsiblity</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="faqs.html" target="_blank" role="button">Subway FAQs</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="contact.html" target="_blank" role="button">Contact Us</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                            </div>
+                                        </div>
+                                        <li>
+                                            <p class="dropdown-item-text position-absolute bottom-0 start-0 w-100 fw-bold text-center m-0"
+                                                style="color:#DEEBD3; background-color:#00572D;   ">SUBWAY - EAT FRESH,
+                                                LIVE
+                                                GREEN</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="btn-group">
+                                    <a class="btn btn-outline-success dropdown-toggle nav-btn  "
+                                        href="http://www.google.com" role="button" aria-expanded="false">
+                                        Careers
+                                    </a>
+                                    <ul class="dropdown-menu m-0 "
+                                        style="width: 60vh;height: 40vh; padding: 10px; background-image: url('images/home/nav5.jpg');   background-repeat: no-repeat; background-position:right bottom; box-shadow:inset 0 0 25px #24a344;">
+                                        <div class="d-flex flex-row  my-0">
+
+                                            <div class="p-2 my-0 ">
+                                                <li>
+                                                    <h3 class="nav-item-heading">SUBWAY<sup>®</sup> Careers</h3>
+                                                </li>
+                                                <li class="dropdown-divider   m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Headquaters Jobs</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Local Restaurant
+                                                        Jobs</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Regional Jobs</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success  text-nowrap  "
+                                                        href="http://www.google.com" role="button">View Our
+                                                        Franchise Oppourtunities</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                            </div>
+
+
+
+                                        </div>
+                                        <li>
+                                            <p class="dropdown-item-text position-absolute bottom-0 start-0 w-100 fw-bold text-center m-0"
+                                                style="color:#DEEBD3; background-color:#00572D;   ">GREAT PEOPLE, GREAT
+                                                SANDWICHES</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="btn-group">
+                                    <a class="btn btn-outline-success dropdown-toggle nav-btn  "
+                                        href="http://www.google.com" role="button" aria-expanded="false">
+                                        Own a Franchise
+                                    </a>
+                                    <ul class="dropdown-menu m-0 position-absolute " style="  width: 60vh;height: 40vh; padding: 10px; background-image: url('images/home/nav6.jpg');   background-repeat: no-repeat; background-position:right; box-shadow:inset 0 0 25px #24a344;
+                                            position: absolute; left: -7rem;">
+                                        <div class="d-flex  my-0 ">
+
+                                            <div class="p-2 my-0 ">
+                                                <li>
+                                                    <h3 class="nav-item-heading w-100">Own a Franchise</h3>
+                                                </li>
+                                                <li class="dropdown-divider   m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Why Chose SUBWAY?</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Your Next Step</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Apply To Own</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Attend A Seminar</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Register Your
+                                                        Interest</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Franchising FAQs
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success  text-nowrap  "
+                                                        href="http://www.google.com" role="button">Contact Franchise
+                                                        Sales</a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+                                                <li>
+                                                    <a class="nav-item-list btn btn-outline-success w-100  "
+                                                        href="http://www.google.com" role="button">Submit A Locations
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-divider m-0 p-0"></li>
+
+                                            </div>
+
+
+
+                                        </div>
+                                        <li>
+                                            <p class="dropdown-item-text position-absolute bottom-0 start-0 w-100 fw-bold text-center m-0"
+                                                style="color:#DEEBD3; background-color:#00572D;   ">ALL ABOUT
+                                                FRANCHISING
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            </span>
+
+        </header>
+        <hr style="border:1px solid ;  padding:0px; margin:0px;">
+
+
+        <!-- body  -->
+        <div class="row">
+            <div class="col-sm-8">
+                <!-- HEADING TITLE  -->
+                <br>
+                <h1 class="page-title ">How Can We Help?</h1>
+                <hr>
+                <!-- Heading Text  -->
+                <h3 class="page-text">Whether you want to share your experience, or need support for one of our
+                    programs, we're here to help. Maybe we've already answered your question in our FAQ section. If not,
+                    contact information and options for our many programs are available below.</h3>
+                <!-- 2 buttons  -->
+                <div class="btn-group w-100 p-0 m-0" role="group" aria-label="Basic example" style="  ">
+                    <a class="btn btn-outline-success active nav-btn mx-3 " href="Location.html" role="button"
+                        aria-expanded="false" style="height:40px ;">FAQs</a>
+                    <a class="btn btn-outline-success  nav-btn  mx-3 " href="Location.html" role="button"
+                        aria-expanded="false" style="height:40px ;">Contact Us </a>
+
+                </div>
+                <!-- line break  -->
+                <div>
+                    <hr style="border:2px solid ;  padding:0px; margin:0px;">
+                </div>
+                <div class="container m-3">
+                    <h3 class=" grey-text d-inline border-1"
+                        style="font-size:15px; padding:0px auto; margin-right:10px ;">Choose a Category</h3>
+                    <div class="btn-group w-50">
+                        <button style="border-radius: 0%; " type="button"
+                            class="btn btn-outline-success genral-btn dropdown-toggle text-start"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Genral
+                        </button>
+                        <ul class="dropdown-menu w-100  " style="background-color: #A4A4A4 ;">
+                            <!-- <li><a class="dropdown-item" href="#">Genral</a></li> -->
+                            <li><a class="dropdown-item" href="#">Menu And Nutitents</a></li>
+                            <li><a class="dropdown-item" href="#">Franchising</a></li>
+                            <li><a class="dropdown-item" href="#">Franchising</a></li>
+                            <li><a class="dropdown-item" href="#">Subway® Listners</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- Questions  -->
+                <!-- question-title  -->
+                <div class="container my-3">
+                    <h3 class="question-title d-inline mx-4  ">Genral FAQs</h3>
+                    <a class="question-heading " data-bs-toggle="collapse" href=" #all" role="button"
+                        aria-expanded="false" aria-controls="collapseExample ">
+                        Expand all
+                    </a>
+                </div>
+                <div>
+                    <!-- First Question S  -->
+                    <p>
+                        <a class="question-heading" data-bs-toggle="collapse" href="#collapseQ1" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            1. Who founded the Subway® restaurants? When and where did the first restaurant open?
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseQ1">
+                        <div class="card card-body question-text">
+                            In 1965, Subway® Restaurants was founded by 17 year-old high school graduate Fred DeLuca,
+                            along with family friend Dr. Peter Buck. The first restaurant opened in Bridgeport,
+                            Connecticut, USA in 1965 and was called Pete’s Super Submarines. The first franchised
+                            Subway® unit opened in Wallingford, Connecticut.
+                        </div>
+                    </div>
+                    <div class="collapse" id="all">
+                        <div class="card card-body question-text">
+                            In 1965, Subway® Restaurants was founded by 17 year-old high school graduate Fred DeLuca,
+                            along with family friend Dr. Peter Buck. The first restaurant opened in Bridgeport,
+                            Connecticut, USA in 1965 and was called Pete’s Super Submarines. The first franchised
+                            Subway® unit opened in Wallingford, Connecticut.
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- First Question E -->
+                    <!-- Second Quesion S -->
+                    <p>
+                        <a class="question-heading" data-bs-toggle="collapse" href=" #collapseQ2" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            2. Where is the company headquarters?
+                        </a>
+                    </p>
+                    <div class="collapse  " id="collapseQ2">
+                        <div class="card card-body question-text">
+                            The company headquarters is located in Milford, Connecticut, with additional regional and
+                            country offices, employing about 1,000 people in total. Worldwide, its franchisees provide
+                            more than 300,000 jobs in the communities where they are located.
+                        </div>
+                    </div>
+                    <div class="collapse  " id="all">
+                        <div class="card card-body question-text">
+                            The company headquarters is located in Milford, Connecticut, with additional regional and
+                            country offices, employing about 1,000 people in total. Worldwide, its franchisees provide
+                            more than 300,000 jobs in the communities where they are located.
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Second Quesion E  -->
+                    <!-- 3 Quesion S -->
+                    <p>
+                        <a class="question-heading" data-bs-toggle="collapse" href=" #collapseQ3" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            3. Can I buy stock in Subway®?
+                        </a>
+                    </p>
+                    <div class="collapse  " id="collapseQ3">
+                        <div class="card card-body question-text">
+                            No, Subway IP Inc. is a privately held company and is not traded on any stock exchange. Each
+                            franchise is individually owned and operated.
+                        </div>
+                    </div>
+                    <div class="collapse  " id="all">
+                        <div class="card card-body question-text">
+                            No, Subway IP Inc. is a privately held company and is not traded on any stock exchange. Each
+                            franchise is individually owned and operated.
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- 3 Quesion E  -->
+                    <!-- 4 Quesion S -->
+                    <p>
+                        <a class="question-heading" data-bs-toggle="collapse" href=" #collapseQ4" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            4. What are the goals of Subway® restaurants for the future?
+                        </a>
+                    </p>
+                    <div class="collapse  " id="collapseQ4">
+                        <div class="card card-body question-text">
+                            Our goal is to be ranked the number one Quick Service Restaurant (QSR) worldwide while
+                            maintaining the great-tasting freshness of our products that is our trademark.
+                        </div>
+                    </div>
+                    <div class="collapse  " id="all">
+                        <div class="card card-body question-text">
+                            Our goal is to be ranked the number one Quick Service Restaurant (QSR) worldwide while
+                            maintaining the great-tasting freshness of our products that is our trademark.
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- 4 Second Quesion E  -->
+                    <!-- 5 Second Quesion S -->
+                    <p>
+                        <a class="question-heading" data-bs-toggle="collapse" href=" #collapseQ5" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            5. Can I open a franchise?
+                        </a>
+                    </p>
+                    <div class="collapse  " id="collapseQ5">
+                        <div class="card card-body question-text">
+                            Yes- we’d love to have you join the Subway®Team! Currently, there are more than 44,000
+                            Subway® franchises in 110 countries and territories worldwide. A Subway® franchise gives
+                            entrepreneurs an opportunity to provide a known product from an established brand with a
+                            proven operating system already in place. The Own a Franchise section has information on how
+                            to open your own Subway® store.
+                        </div>
+                    </div>
+                    <div class="collapse  " id="all">
+                        <div class="card card-body question-text">
+                            Yes- we’d love to have you join the Subway®Team! Currently, there are more than 44,000
+                            Subway® franchises in 110 countries and territories worldwide. A Subway® franchise gives
+                            entrepreneurs an opportunity to provide a known product from an established brand with a
+                            proven operating system already in place. The Own a Franchise section has information on how
+                            to open your own Subway® store.
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- 5 Second Quesion E  -->
+                    <!-- 6 Second Quesion S -->
+                    <p>
+                        <a class="question-heading" data-bs-toggle="collapse" href=" #collapseQ6" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            6. What is the Subway® brand’s most popular sandwich?
+                        </a>
+                    </p>
+                    <div class="collapse  " id="collapseQ6">
+                        <div class="card card-body question-text">
+                            Ranking at the top of the favorites list are the Italian B.M.T®, tuna, and the Subway Club®.
+                            Fresh Toasted favorites include meatball marinara, the chicken & bacon ranch, and our Subway
+                            Melt® subs.
+
+                            Our sandwiches are so popular, the Subway® brand serves nearly 2,800 sandwiches and salads
+                            every minute! In fact, all of the sandwiches made by Subway® restaurants in a year, placed
+                            end to end, would wrap around the Earth over six times. That’s a lot of sandwiches!
+                        </div>
+                    </div>
+                    <div class="collapse  " id="all">
+                        <div class="card card-body question-text">
+                            Ranking at the top of the favorites list are the Italian B.M.T®, tuna, and the Subway Club®.
+                            Fresh Toasted favorites include meatball marinara, the chicken & bacon ranch, and our Subway
+                            Melt® subs.
+
+                            Our sandwiches are so popular, the Subway® brand serves nearly 2,800 sandwiches and salads
+                            every minute! In fact, all of the sandwiches made by Subway® restaurants in a year, placed
+                            end to end, would wrap around the Earth over six times. That’s a lot of sandwiches!
+                        </div>
+                    </div>
+                    <hr>
+                    <!--6 Second Quesion E  -->
+                    <!-- 7 Second Quesion S -->
+                    <p>
+                        <a class="question-heading" data-bs-toggle="collapse" href=" #collapseQ7" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            7. Can I customize my sandwich?
+                        </a>
+                    </p>
+                    <div class="collapse  " id="collapseQ7">
+                        <div class="card card-body question-text">
+                            Yes! Your friendly sandwich artist will make your freshly made sandwich however you want it.
+                            In fact, there are over 2 million sandwich varieties available from our menu choices, so you
+                            can have your Subway® sandwich with any combination of ingredients we offer. Consider those
+                            varieties as 2 million delicious sandwiches—all with your name on them.
+                        </div>
+                    </div>
+                    <div class="collapse  " id="all">
+                        <div class="card card-body question-text">
+                            Yes! Your friendly sandwich artist will make your freshly made sandwich however you want it.
+                            In fact, there are over 2 million sandwich varieties available from our menu choices, so you
+                            can have your Subway® sandwich with any combination of ingredients we offer. Consider those
+                            varieties as 2 million delicious sandwiches—all with your name on them.
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- 7 Quesion E  -->
+                    <!-- 8 Quesion S -->
+                    <p>
+                        <a class="question-heading" data-bs-toggle="collapse" href=" #collapseQ8" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            8. How does the Subway® brand ensure food safety in its restaurants?
+                        </a>
+                    </p>
+                    <div class="collapse  " id="collapseQ8">
+                        <div class="card card-body question-text">
+                            All Subway® restaurants follow our “Gold Standard” policies regarding prepared food and
+                            produce manufacturing and inspection specifications. All franchises are provided with
+                            information on proper food handling procedures in order to properly train their crew
+                            members.
+                            <br>
+                            Food is prepared fresh daily and temperatures are monitored regularly. Gloves are required
+                            to be worn during all food handling procedures.
+                        </div>
+                    </div>
+                    <div class="collapse  " id="all">
+                        <div class="card card-body question-text">
+                            All Subway® restaurants follow our “Gold Standard” policies regarding prepared food and
+                            produce manufacturing and inspection specifications. All franchises are provided with
+                            information on proper food handling procedures in order to properly train their crew
+                            members.
+
+                            Food is prepared fresh daily and temperatures are monitored regularly. Gloves are required
+                            to be worn during all food handling procedures.
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- 8 Quesion E  -->
+                    <!-- 9 Quesion S -->
+                    <p>
+                        <a class="question-heading" data-bs-toggle="collapse" href=" #collapseQ9" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            9. Can the Subway® menu accommodate my special dietary needs?
+                        </a>
+                    </p>
+                    <div class="collapse  " id="collapseQ9">
+                        <div class="card card-body question-text">
+                            9. Can the Subway® menu accommodate my special dietary needs?
+                        </div>
+                    </div>
+                    <div class="collapse  " id="all">
+                        <div class="card card-body question-text">
+                            Although the Subway® brand maintains the same menu worldwide, menus do change in order to
+                            accommodate the different dietary needs of consumers and adapts where appropriate. For
+                            instance, in India, where the population is largely Hindu and does not eat beef, or Muslim
+                            and does not eat pork, these ingredients are substituted with chicken, lamb, or turkey. And
+                            because Subway® sandwiches are fresh and made to order, customers can add or eliminate
+                            ingredients based on their own dietary needs.
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- 9 Quesion E  -->
+
+
+                </div>
+
+            </div>
+
+
+            <!-- Three buttons -->
+            <div class="container ">
+
+
+                <nav class="navbar navbar-expand-lg bg-light  ">
+                    <div class="d-flex w-100 text-center flex-wrap" style="margin:2% auto ; padding:0px auto">
+
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style=" margin: auto auto;  ">
+                                <li class="nav-item p-2 f-item ">
+                                    <div class="btn-group dropup p-0">
+                                        <a class="btn btn-outline-primary dropdown-toggle nav-btn-f p-2 m-0 "
+                                            href="http://www.google.com" role="button" aria-expanded="false" style="color: #ffffff;
+                                        background-color: #0E82AF !important;
+                                        border: 1px solid #0E82AF !important;
+                                    ">Locations</a>
+                                        <ul class="dropdown-menu f-btn-1"
+                                            style="position: absolute; left: -0.6rem; top: -18.5rem;">
+
+
+                                            <li>
+                                                <p class="dropdown-item-text position-absolute top-0 start-0 w-100 fw-bold  m-0"
+                                                    style="color:white;  background-color: #0E82AF; font-size: 21px;   ">
+                                                    View
+                                                    Your Menu </p>
+                                                <button type="button" class="btn-close position-absolute end-0 px-3 "
+                                                    aria-label="Close"></button>
+                                            </li>
+
+                                            <div class="p-0 px-2 text-start  text-wrap " style="margin-top:5% ;">
+                                                <h3 class="f-btn-text" style="padding-left: 35%;">Whatever you're in the
+                                                    mood
+                                                    for, SUBWAY® has a wide variety of Subs, salads, and sides to choose
+                                                    from.
+                                                    Every one of our Subs is made fresh in front of you, exactly the way
+                                                    you
+                                                    want it!
+                                                </h3>
+                                            </div>
+                                            <div class="p-0 px-2 text-start  text-wrap ">
+                                                <a class="btn btn-success f-btn-btn p-2  " href="http://www.google.com"
+                                                    role="button" aria-expanded="false"
+                                                    style="  font-size: medium;  margin-left:35% ;  ">Learn More</a>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item p-2 mx-4  f-item-2">
+                                    <div class="btn-group dropup p-0">
+                                        <a class="btn btn-outline-primary dropdown-toggle nav-btn-f p-2 m-0 "
+                                            href="http://www.google.com" role="button" aria-expanded="false" style="    color: #ffffff !important;
+                                        background-color: #DE3804 !important;
+                                        border: 1px solid #DE3804 !important;">Join Our Team</a>
+
+                                    </div>
+                                </li>
+                                <li class="nav-item p-2 f-item  ">
+                                    <div class="btn-group dropup p-0">
+                                        <a class="btn btn-outline-primary dropdown-toggle nav-btn-f p-2 m-0 "
+                                            href="http://www.google.com" role="button" aria-expanded="false" style="     color: #006230;
+                                        background-color: #ffc20d;
+                                        border: 1px solid #ffc20d;">Own A Franchise</a>
+
+                                        <ul class="dropdown-menu f-btn-3  "
+                                            style="position: absolute; left: -37.1rem; top: -18.5rem;">
+                                            <li>
+                                                <p class="dropdown-item-text position-absolute top-0 start-0 w-100 fw-bold  m-0"
+                                                    style=" color: #006230; background-color: #ffc20d;  font-size: 21px;">
+                                                    Own A
+                                                    Franchise</p>
+                                                <button type="button" class="btn-close position-absolute end-0 px-3 "
+                                                    aria-label="Close"></button>
+                                            </li>
+                                            <div class="pt-5 px-2 text-start ">
+                                                <h3 class="f-btn-title" style="color: #b8a435;">Want to Own Your
+                                                    <u>Own</u>
+                                                    Restaurant?
+                                                </h3>
+                                            </div>
+                                            <div class="p-0 px-2 text-start  text-wrap ">
+                                                <h3 class="f-btn-text" style="width: 70%;">When you own a SUBWAY®
+                                                    restaurant,
+                                                    you’re part of the
+                                                    world’s largest
+                                                    restaurant chain and one of its most recognized brands. Join the
+                                                    team
+                                                    today!
+                                                </h3>
+                                            </div>
+                                            <div class="p-0 px-2 text-start  text-wrap ">
+                                                <a class="btn btn-success f-btn-btn p-2 m-0 "
+                                                    href="http://www.google.com" role="button" aria-expanded="false"
+                                                    style="  font-size: medium;   ">Learn
+                                                    More</a>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Fotter  -->
+        <footer class="container-fluid position-relative " style="z-index:3; top:-2vh;">
+
+
+            <!-- <div class="container">
+            <div class="d-flex w-75 text-center flex-wrap" style="margin:2% auto ; padding:0px auto">
+                
+                <div class="p-2 flex-fill">Flex item</div>
+                <div class="p-2 flex-fill">Flex item</div>
+                <div class="p-2 flex-fill">Flex item</div>
+              </div>
+        </div> -->
+            <!-- footer  -->
+            <div class="container-fluid w-100    "
+                style="background-image:url('images/home/f-bg.png') ; height: 25vh; color: #747474; padding: 0px 15vh; ">
+                <div class="d-flex flex-wrap flex-column p-3 w-100  " style="margin: 0px auto ;">
+                    <div class=" d-flex justify-content-evenly flex-wrap  " style="color: #A4A4A4;">
+                        <div class="p-2 ">
+                            <h6 class="f-heading m-">Management</h6>
+                            <p><a class="f-link" target="_blank" href="http://">Subway Partners<sup>TM</sup></a></p>
+                            <p><a class="f-link" target="_blank" href="http://">Careers</a></p>
+                        </div>
+                        <div class="p-2 ">
+                            <h6 class="f-heading">Social</h6>
+                            <p><a class="f-link" target="_blank" href="http://">Like Us On Facebook</a></p>
+                        </div>
+                        <div class="p-2 ">
+                            <h6 class="f-heading">Related Sites</h6>
+                        </div>
+                        <div class="p-2 ">
+                            <h6 class="f-heading">Profhile Management</h6>
+                            <p><a class="f-link" target="_blank" href="http://">contact us</a></p>
+                        </div>
+                        <div class="p-2 ">
+                            <h6 class="f-heading">Legal</h6>
+                            <p><a class="f-link" target="_blank" href="http://">Privacy Statement</a></p>
+                            <p><a class="f-link" target="_blank" href="http://">Term of Use</a></p>
+                        </div>
+                        <div class="p-2 ">
+                            <h6 class="f-heading">Accessibility</h6>
+                            <p><a class="f-link" target="_blank" href="http://">Adobe PDF Reader</a></p>
+                            <p><a class="f-link" target="_blank" href="http://">Adobe Flash Plugin</a></p>
+                        </div>
+
+
+                    </div>
+                    <div class="p-2 d-flex flex-column " style="COLOR:#353535; font-size: 15px; ">
+                        <div class="p-0 m-0 d-flex justify-content-center  ">
+                            <p class="f-d">SUBWAY® is a Registered Trademark of Subway IP LLC.</p>
+                        </div>
+                        <div class="p-0 m-0 d-flex justify-content-center ">
+                            <p class="f-d">© 2022 Subway IP LLC </p>
+                        </div>
+                        <div class="p-0 m-0 d-flex justify-content-center  ">
+                            <p class="f-d">All Rights Reserved.</p>
+                        </div>
+                        <div class="p-0 m-0 d-flex justify-content-center  ">
+                            <p class="f-d"><a class="f-link-d" target="_blank" href="http://">Cookie Settings</a></p>
+                        </div>
+                        <!-- <p>SUBWAY® is a Registered Trademark of Subway IP LLC.</p>
+                <p>© 2022 Subway IP LLC</p>
+                <p>All Rights Reserved.</p> -->
+                        <p></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </footer>
+        <!-- JavaScript  -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

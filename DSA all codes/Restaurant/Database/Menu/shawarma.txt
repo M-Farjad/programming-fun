@@ -1,0 +1,10 @@
+Platter_Shawarma 12.80
+Grilled_Shawarma 6.80
+Chesse_Shawarma 5.70
+Kobab_Shawarma 5.30
+Zinger_Shawarma 5.00
+Chicken_L_Shawarma 5.80
+Chicken_M_Shawarma 4.80
+Chicken_S_Shawarma 4.0
+Fried_Shwarama_Bread 1.10
+Shwarama_Bread 1.00

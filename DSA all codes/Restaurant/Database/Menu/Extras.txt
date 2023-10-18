@@ -1,0 +1,7 @@
+Molten_Lava_Cake 4.80
+Choclate_Cake 3.80
+Vanilla_Scope 2.80
+Water_Botter 1.00
+Coca_Cola 2.50
+Pepsi 2.50
+Dew 2.50

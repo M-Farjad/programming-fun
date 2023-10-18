@@ -1,0 +1,7 @@
+Kobab_Burger 5.20
+Grilled_Burger 4.80
+Zinger_Burger 4.00
+Jumbo_Petty_Burger 4.00
+Chicken_Burger 4.00
+Petty_Burger 3.80
+Chesse_Burger 3.80

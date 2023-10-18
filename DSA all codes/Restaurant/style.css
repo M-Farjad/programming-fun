@@ -1,0 +1,239 @@
+* {
+    /* margin: 0px;
+    padding: 0px;
+    border: 2px solid red;
+    box-sizing: border-box;
+   */
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+
+}
+
+#logo {
+    display: inline-block;
+
+}
+
+#flag-changing {
+    display: inline-block;
+    padding: 0px;
+
+}
+
+#navbar {
+    display: inline-block;
+
+}
+
+#location-dropdown {
+    background-image: url('images/home/b1.jpg');
+}
+
+.nav-item-heading {
+    color: #008952;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.nav-item-list {
+    padding: 0;
+    padding-left: 5%;
+    margin: 0px;
+    border: 0px;
+    color: #777777;
+    text-align: left;
+    font-size: 15px;
+
+}
+
+.nav-item-list:hover {
+    color: #DEEBD3;
+    border-radius: 1%;
+
+}
+
+.nav-btn {
+    border: 0px;
+    font-weight: 700;
+    color: #777777;
+}
+
+.nav-btn:hover {
+    border-radius: 1px;
+}
+
+.nav-btn-f {
+    background-color: white;
+
+    width: 250px;
+    margin: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: 700;
+    color: white;
+    border-radius: 1px;
+
+}
+
+.nav-btn-f:hover {
+    border: 1px solid black;
+
+}
+
+.f-heading{
+    margin-top: 3vh;
+    font-size: 17px;
+    
+}
+
+.f-link {
+    color: #575757;
+    font-size: 14px;
+}
+
+.f-link:hover {
+    color: #00572D;
+}
+
+.f-link-d {
+    color: #00572D;
+}
+
+.f-link-d:hover {
+    color: #24a344;
+}
+
+.f-d {
+    margin: 0px auto;
+    padding: 0px;
+    font-weight: 1;
+}
+
+.f-item {
+    background-color: white;
+    padding: 2px;
+    border: 1px solid gainsboro;
+}
+
+.f-item-2 {
+    background-color: white;
+    padding: 2px;
+    border: 1px solid gainsboro;
+}
+
+.f-item:hover {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 0px solid white;
+}
+
+.f-btn-1 {
+    width: 100vh;
+    height: 30vh;
+    padding: 10px;
+    background-image: url('images/home/b1.jpg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 1px;
+    
+}
+
+.f-btn-3 {
+    width: 100vh;
+    height: 30vh;
+    padding: 10px;
+    background-image: url('images/home/b3.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 1px;
+}
+.p-f-btn-1 {
+   
+    
+}
+
+.p-f-btn-3 {
+    position: absolute; left: -31.86rem; top: -14.9rem;
+}
+
+.f-btn-btn {
+    /* box-shadow: inset 0 0 30px #e9e9e9; */
+    background: #757475;
+    color: #444344;
+    font-size: 13px;
+    border-radius: 100px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 0px;
+
+}
+
+
+.f-btn-title {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: left;
+    padding: 15px 0;
+}
+
+.f-btn-text {
+    font-size: 15px;
+    line-height: 19px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #353535;
+}
+
+
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+
+    /* .navbar .nav-item:hover .nav-link {} */
+
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        position: absolute;
+        top: 2rem;
+    }
+}
+@media all and (min-width: 992px) {
+    .btn-group .dropdown-menu {
+        display: none;
+    }
+
+    /* .navbar .nav-item:hover .nav-link {} */
+
+    .btn-group:hover .dropdown-menu {
+        display: block;
+    }
+
+     .btn-group .dropdown-menu {
+        position: absolute;
+        top: 2rem;
+    }
+}
+@media all and (min-width: 992px) {
+    .btn.drp .dropdown-menu {
+        display: none;
+    }
+
+    /* .navbar .nav-item:hover .nav-link {} */
+
+    .btn-drp:hover .dropdown-menu {
+        display: block;
+    }
+
+     .btn-drp .dropdown-menu {
+        position: absolute;
+        top: 2rem;
+    }
+}

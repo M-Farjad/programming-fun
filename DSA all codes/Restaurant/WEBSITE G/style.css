@@ -1,0 +1,148 @@
+/* :root{
+    --main-radius:5px;
+    --main-padding:5px;
+} */
+body{
+    /* background-color: black; */
+    padding: 0%;
+    margin: 0%;
+}
+.container{
+    display: grid;
+    height: 240vh;
+    margin: 0%;
+    padding: 0%;
+    grid-template-columns:1.5fr 2.5fr ;
+    grid-template-rows: 0.8fr 3.533fr 3.533fr 4.133fr 4.5fr 7fr 3.8fr;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "slide portFolio" 
+    "slide codes" 
+    "slide notes"
+    "postPage postPage"
+    "contactUs contactUs"
+    "footer footer"
+    "footer footer"
+    ;
+    grid-gap: 0.52rem; 
+
+    text-align: center;
+}
+
+header{
+    grid-area: header;
+    
+    /* border-radius: (--main-radius);
+    padding-top: (--main-padding); */
+}
+nav{
+    background-color: aqua;
+    grid-area: nav;
+    /* border-radius: (--main-radius);
+    padding-top: (--main-padding); */
+}
+#slide{
+    background-color:brown;
+    grid-area: slide;
+    /* border-radius: (--main-radius);
+    padding-top: (--main-padding); */
+}
+#portFolio{
+    background-color: yellowgreen;
+    grid-area: portFolio;
+    /* border-radius: (--main-radius);
+    padding-top: (--main-padding); */
+}
+#codes{
+    background-color: yellow;
+    grid-area: codes;
+    /* border-radius: (--main-radius);
+    padding-top: (--main-padding); */
+}
+#notes{
+    background-color: turquoise;
+    grid-area: notes;
+    /* border-radius: (--main-radius);
+    padding-top: (--main-padding); */
+}
+.postPage{
+    background-color:darkgray ;
+    grid-area: postPage;
+    display: grid;
+    grid-template-columns: 3.3fr 3.3fr 3.3fr;
+    grid-area: 
+    "adds meme dailyQuotes";
+    
+}
+#adds{
+    background-color: skyblue;
+    /* grid-area: adds; */
+    
+}
+#meme{
+    background-color: slateblue;
+    /* grid-area: meme; */
+}
+#dailyQuotes{
+    background-color: seagreen;
+    /* grid-area: dailyQuotes; */
+}
+#contactUs{
+    background-color: rosybrown;
+    grid-area: contactUs;
+}
+footer{
+    background-color: cornflowerblue;
+    grid-area: footer;
+    height: 2em;
+}
+
+@media only screen and (max-width : 550px){
+    .container{
+        height: 480vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.22fr 2.5fr 1fr 1fr 1fr 3fr 2fr 1fr ;
+        grid-template-areas: 
+        "nav"
+        "slide"
+        "portFolio"
+        "codes"
+        "notes"
+        "postPage"
+        "contactUs"
+        "footer"
+        
+        ;
+    }
+    .postPage{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 2fr 1fr;
+
+    }
+}
+
+
+/* header  */
+header{
+    text-align: center;
+}
+
+header p {
+    display: inline-block;
+    color: #ffffff;
+    font-family: "Patrick Hand", cursive;
+    font-size: large;
+  }
+
+#logo {
+      height: 50px;
+      width: 50px;
+      
+    }
+#logo-text{
+      display: inline-block;
+    color: #ffffff;
+    font-family: "Patrick Hand", cursive;
+    font-size: large;
+    }
