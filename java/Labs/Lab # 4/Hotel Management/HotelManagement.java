@@ -6,7 +6,7 @@ public class HotelManagement {
     private boolean isOpen;
     private List<Employee> employees;
     private List<Customer> customers;
-    private List<Menu> menus;
+    private Menu menu;
     private List<Order> orders;
 
     public String getHotelName() {
@@ -34,7 +34,7 @@ public class HotelManagement {
         this.isOpen = true;
         this.employees = new ArrayList<Employee>();
         this.customers = new ArrayList<Customer>();
-        this.menus = new ArrayList<Menu>();
+        this.menu = new Menu();
         this.orders = new ArrayList<Order>();
     }
 
@@ -46,8 +46,8 @@ public class HotelManagement {
         return customers;
     }
 
-    public List<Menu> getMenus() {
-        return menus;
+    public Menu getMenu() {
+        return menu;
     }
 
     public List<Order> getOrders() {
@@ -70,14 +70,6 @@ public class HotelManagement {
 
     public void removeCustomer(Customer customer) {
         this.customers.remove(customer);
-    }
-
-    public void addMenu(Menu menu) {
-        this.menus.add(menu);
-    }
-
-    public void removeMenu(Menu menu) {
-        this.menus.remove(menu);
     }
 
     public void addOrder(Order order) {

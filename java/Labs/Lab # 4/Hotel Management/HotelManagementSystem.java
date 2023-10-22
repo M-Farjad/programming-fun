@@ -4,8 +4,8 @@ public class HotelManagementSystem {
     static void showMenu() {
         System.out.println("1) Manage Employees");
         System.out.println("2) Manage Customer");
-        System.out.println("3) Manage Order");
-        System.out.println("4) Manage Menu");
+        System.out.println("3) Manage Menu");
+        System.out.println("4) Manage Order");
         System.out.println("5) Generate Bill");
         System.out.println("6) Exit");
         System.out.print("Enter your choice: ");
@@ -28,9 +28,9 @@ public class HotelManagementSystem {
     }
 
     static void showMenuMenu() {
-        System.out.println("1) Add Menu");
-        System.out.println("2) Remove Menu");
-        System.out.println("3) Show Menus");
+        System.out.println("1) Add Item in Menu");
+        System.out.println("2) Remove Item in Menu");
+        System.out.println("3) Show Item in Menu");
         System.out.println("4) Exit");
         System.out.print("Enter your choice: ");
     }
@@ -66,12 +66,16 @@ public class HotelManagementSystem {
         do {
             showMenu();
             cond = sc.nextInt();
+            System.out.print("\033[H\033[2J");
+            System.out.flush();
             switch (cond) {
                 case 1:
                     // Handle Employees
                     int flag;
                     showEmployeeMenu();
                     flag = sc.nextInt();
+                    System.out.print("\033[H\033[2J");
+                    System.out.flush();
                     switch (flag) {
                         case 1:
                             // Add Employee
@@ -81,18 +85,24 @@ public class HotelManagementSystem {
                             String employeeName = sc.next();
                             System.out.print("Enter Employee Salary: ");
                             String employeeSalary = sc.next();
-                            hotelManagement.addEmployee(new Employee(employeeId, employeeName, employeeSalary));
+                            if (employeeId.length() == 0 || employeeName.length() == 0
+                                    || employeeSalary.length() == 0) {
+                                System.out.println("Invalid Input");
+                                break;
+                            }
                             break;
                         case 2:
                             // Remove Employee
                             System.out.print("Enter Employee Id: ");
                             String employeeIdToRemove = sc.next();
+
                             for (Employee employee : hotelManagement.getEmployees()) {
                                 if (employee.getEmployeeId().equals(employeeIdToRemove)) {
                                     hotelManagement.removeEmployee(employee);
                                     break;
                                 }
                             }
+
                             break;
                         case 3:
                             // Show Employees
@@ -119,6 +129,8 @@ public class HotelManagementSystem {
                     int flag1;
                     showCustomerMenu();
                     flag1 = sc.nextInt();
+                    System.out.print("\033[H\033[2J");
+                    System.out.flush();
                     switch (flag1) {
                         case 1:
                             // Add Customer
@@ -159,27 +171,85 @@ public class HotelManagementSystem {
                     }
                     break;
                 case 3:
+                    // Handle Menu
+                    int flag3;
+                    showMenuMenu();
+                    flag3 = sc.nextInt();
+                    System.out.print("\033[H\033[2J");
+                    System.out.flush();
+                    switch (flag3) {
+                        case 1:
+                            // Add Item
+                            System.out.print("Enter Item Id: ");
+                            int itemId = sc.nextInt();
+                            System.out.print("Enter Item Name: ");
+                            String itemName = sc.next();
+                            System.out.print("Enter Item Price: ");
+                            double itemPrice = sc.nextDouble();
+                            hotelManagement.getMenu().addItem(new Item(itemId, itemName, itemPrice));
+                            System.out.println("Item Added");
+                            break;
+                        case 2:
+                            // Remove Item in Menu
+                            System.out.print("Enter Item Id: ");
+                            int itemIdToRemove = sc.nextInt();
+                            for (Item item : hotelManagement.getMenu().getItems()) {
+                                if (item.getItemId() == itemIdToRemove) {
+                                    hotelManagement.getMenu().removeItem(item);
+                                    break;
+                                }
+                            }
+                            System.out.println("Item Removed");
+                            break;
+                        case 3:
+                            // Show Menu
+                            System.out.println(">>> Items in Menu <<<");
+                            for (Item item : hotelManagement.getMenu().getItems()) {
+                                System.out.print("Item Id: " + item.getItemId());
+                                System.out.println(", Item Name: " + item.getItemName());
+                            }
+                            System.out.println(">>> End of Menu <<<");
+                            System.out.println();
+                            break;
+                        case 4:
+                            // Exit
+                            break;
+                        default:
+                            System.out.println("Invalid Choice");
+                    }
+                    break;
+                case 4:
                     // Handle Order
                     int flag2;
                     showOrderMenu();
                     flag2 = sc.nextInt();
+                    System.out.print("\033[H\033[2J");
+                    System.out.flush();
                     switch (flag2) {
                         case 1:
                             // Add Order
                             System.out.print("Enter Order Id: ");
                             int orderId = sc.nextInt();
-                            System.out.print("Enter Menu Id: ");
-                            int menuId = sc.nextInt();
-                            hotelManagement
-                                    .addOrder(new Order(orderId, hotelManagement.getMenus().get(menuId - 1)));
+                            Order order = new Order(orderId);
+                            do {
+                                System.out.print("Enter Item Id: ");
+                                int itemId = sc.nextInt();
+                                order.addItem(itemId, hotelManagement.getMenu());
+                                System.out.print("Add more items? (y/n): ");
+                                char choice = sc.next().charAt(0);
+                                if (choice == 'n' || choice == 'N') {
+                                    break;
+                                }
+                            } while (true);
+                            hotelManagement.addOrder(order);
                             break;
                         case 2:
                             // Remove Order
                             System.out.print("Enter Order Id: ");
                             int orderIdToRemove = sc.nextInt();
-                            for (Order order : hotelManagement.getOrders()) {
-                                if (order.getOrderId() == orderIdToRemove) {
-                                    hotelManagement.removeOrder(order);
+                            for (Order order1 : hotelManagement.getOrders()) {
+                                if (order1.getOrderId() == orderIdToRemove) {
+                                    hotelManagement.removeOrder(order1);
                                     break;
                                 }
                             }
@@ -190,53 +260,12 @@ public class HotelManagementSystem {
                                 System.out.println("No Orders");
                                 break;
                             }
-                            for (Order order : hotelManagement.getOrders()) {
-                                System.out.print("Order Id: " + order.getOrderId());
-                                System.out.print(", Menu Id: " + order.getMenu().getItemId());
-                                System.out.println();
-                            }
-                            break;
-                        case 4:
-                            // Exit
-                            break;
-                        default:
-                            System.out.println("Invalid Choice");
-                    }
-                    break;
-                case 4:
-                    // Handle Menu
-                    int flag3;
-                    showMenuMenu();
-                    flag3 = sc.nextInt();
-                    switch (flag3) {
-                        case 1:
-                            // Add Menu
-                            System.out.print("Enter Menu Id: ");
-                            int menuId = sc.nextInt();
-                            System.out.print("Enter Menu Name: ");
-                            String menuName = sc.next();
-                            hotelManagement.addMenu(new Menu(menuId, menuName));
-                            break;
-                        case 2:
-                            // Remove Menu
-                            System.out.print("Enter Menu Id: ");
-                            int menuIdToRemove = sc.nextInt();
-                            for (Menu menu : hotelManagement.getMenus()) {
-                                if (menu.getItemId() == menuIdToRemove) {
-                                    hotelManagement.removeMenu(menu);
-                                    break;
+                            for (Order order2 : hotelManagement.getOrders()) {
+                                System.out.print("Order Id: " + order2.getOrderId());
+                                for (Item item : order2.getItems()) {
+                                    System.out.print(", Item Id: " + item.getItemId());
+                                    System.out.print(", Item Name: " + item.getItemName());
                                 }
-                            }
-                            break;
-                        case 3:
-                            // Show Menus
-                            if (hotelManagement.getMenus().isEmpty()) {
-                                System.out.println("No Menus");
-                                break;
-                            }
-                            for (Menu menu : hotelManagement.getMenus()) {
-                                System.out.print("Menu Id: " + menu.getItemId());
-                                System.out.print(", Menu Name: " + menu.getItemName());
                                 System.out.println();
                             }
                             break;

@@ -4,7 +4,7 @@ public class LabExamples {
         b.show();
     }
 }
-//example of polymorphism
+
 class Shape {
     double length;
     double width;
@@ -21,6 +21,7 @@ class Shape {
         return length * width;
     }
 }
+
 class Box extends Shape {
     double height;
 
@@ -40,11 +41,13 @@ class Box extends Shape {
         System.out.println("Height: " + height);
     }
 }
-class Circle extends Shape{
-    public Circle(double r){
-        super(r,r);
+
+class Circle extends Shape {
+    public Circle(double r) {
+        super(r, r);
     }
-    public double area(){
-        return Math.PI*length*length;
+
+    public double area() {
+        return Math.PI * length * length;
     }
 }

@@ -5,9 +5,9 @@ public class Menu {
     private String itemName;
     private List<Item> items;
 
-    public Menu(int menuId, String menuName) {
-        this.itemId = menuId;
-        this.itemName = menuName;
+    public Menu() {
+        this.itemId = 1;
+        this.itemName = "Menu";
         this.items = new ArrayList<>();
     }
 
