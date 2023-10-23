@@ -7,7 +7,16 @@ public class HotelManagement {
     private List<Employee> employees;
     private List<Customer> customers;
     private Menu menu;
-    private List<Order> orders;
+    private static List<Order> orders;
+
+    public static Order getOrderById(String orderId) {
+        for (Order order : orders) {
+            if (order.getOrderId() == orderId) {
+                return order;
+            }
+        }
+        return null;
+    }
 
     public String getHotelName() {
         return hotelName;
@@ -22,11 +31,13 @@ public class HotelManagement {
     }
 
     public void open() {
+        System.out.println("Hotel is open now.");
         isOpen = true;
     }
 
     public void close() {
         isOpen = false;
+        System.out.println("Hotel is closed now.");
     }
 
     public HotelManagement(String hotelName) {
@@ -35,7 +46,7 @@ public class HotelManagement {
         this.employees = new ArrayList<Employee>();
         this.customers = new ArrayList<Customer>();
         this.menu = new Menu();
-        this.orders = new ArrayList<Order>();
+        HotelManagement.orders = new ArrayList<Order>();
     }
 
     public List<Employee> getEmployees() {
@@ -73,10 +84,10 @@ public class HotelManagement {
     }
 
     public void addOrder(Order order) {
-        this.orders.add(order);
+        HotelManagement.orders.add(order);
     }
 
     public void removeOrder(Order order) {
-        this.orders.remove(order);
+        HotelManagement.orders.remove(order);
     }
 }

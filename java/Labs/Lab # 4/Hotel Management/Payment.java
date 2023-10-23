@@ -2,6 +2,7 @@ public abstract class Payment {
     private int paymentId;
     private double amount;
     private PaymentStatus status;
+    public static int paymentIdCounter = 1;
 
     public Payment(int paymentId, double amount) {
         this.paymentId = paymentId;

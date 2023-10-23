@@ -138,7 +138,9 @@ public class HotelManagementSystem {
                             int customerId = sc.nextInt();
                             System.out.print("Enter Customer Name: ");
                             String customerName = sc.next();
-                            hotelManagement.addCustomer(new Customer(customerId, customerName));
+                            System.out.print("Enter Customer Order Id: ");
+                            String customerOrderId = sc.next();
+                            hotelManagement.addCustomer(new Customer(customerId, customerName, customerOrderId));
                             break;
                         case 2:
                             // Remove Customer
@@ -229,7 +231,7 @@ public class HotelManagementSystem {
                         case 1:
                             // Add Order
                             System.out.print("Enter Order Id: ");
-                            int orderId = sc.nextInt();
+                            String orderId = sc.next();
                             Order order = new Order(orderId);
                             do {
                                 System.out.print("Enter Item Id: ");
@@ -246,7 +248,7 @@ public class HotelManagementSystem {
                         case 2:
                             // Remove Order
                             System.out.print("Enter Order Id: ");
-                            int orderIdToRemove = sc.nextInt();
+                            String orderIdToRemove = sc.next();
                             for (Order order1 : hotelManagement.getOrders()) {
                                 if (order1.getOrderId() == orderIdToRemove) {
                                     hotelManagement.removeOrder(order1);
@@ -262,11 +264,7 @@ public class HotelManagementSystem {
                             }
                             for (Order order2 : hotelManagement.getOrders()) {
                                 System.out.print("Order Id: " + order2.getOrderId());
-                                for (Item item : order2.getItems()) {
-                                    System.out.print(", Item Id: " + item.getItemId());
-                                    System.out.print(", Item Name: " + item.getItemName());
-                                }
-                                System.out.println();
+                                order2.order_items();
                             }
                             break;
                         case 4:
@@ -277,41 +275,15 @@ public class HotelManagementSystem {
                     }
                     break;
                 case 5:
-                    // Genereate Bill
+                    // Generate Bill
                     System.out.print("Enter Customer Id: ");
                     int customerId = sc.nextInt();
-                    System.out.print("Enter Bill Id: ");
-                    int billId = sc.nextInt();
-                    Bill bill = new Bill(billId, hotelManagement.getCustomers().get(customerId - 1));
-                    System.out.print("Enter Order Id: ");
-                    int orderId = sc.nextInt();
-                    for (Order order : hotelManagement.getOrders()) {
-                        if (order.getOrderId() == orderId) {
-                            bill.addOrder(order);
+                    for (Customer customer : hotelManagement.getCustomers()) {
+                        if (customerId == customer.getCustomerId()) {
+                            customer.printBill();
                             break;
                         }
                     }
-                    System.out.print("Enter Payment Id: ");
-                    int paymentId = sc.nextInt();
-                    System.out.print("Enter Payment Amount: ");
-                    double paymentAmount = sc.nextDouble();
-                    System.out.print("Enter Payment Type (1 for Card, 2 for Cash): ");
-                    int paymentType = sc.nextInt();
-                    Payment payment;
-                    if (paymentType == 1) {
-                        System.out.print("Enter Card Number: ");
-                        String cardNumber = sc.next();
-                        System.out.print("Enter Expiration Date: ");
-                        String expirationDate = sc.next();
-                        System.out.print("Enter CVV: ");
-                        String cvv = sc.next();
-                        payment = new Card(paymentId, paymentAmount, cardNumber, expirationDate, cvv);
-                    } else {
-                        System.out.print("Enter Cash Tendered: ");
-                        double cashTendered = sc.nextDouble();
-                        payment = new Cash(paymentId, paymentAmount, cashTendered);
-                    }
-                    payment.processPayment();
                     break;
             }
         } while (cond != 6);

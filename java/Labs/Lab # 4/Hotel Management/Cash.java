@@ -1,13 +1,7 @@
 public class Cash extends Payment {
-    private double cashTendered;
 
-    public Cash(int paymentId, double amount, double cashTendered) {
+    public Cash(int paymentId, double amount) {
         super(paymentId, amount);
-        this.cashTendered = cashTendered;
-    }
-
-    public double getCashTendered() {
-        return cashTendered;
     }
 
     @Override

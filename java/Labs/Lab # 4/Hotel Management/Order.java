@@ -1,17 +1,17 @@
 import java.util.*;
 
 public class Order {
-    private int orderId;
+    private String orderId;
     private List<Item> items;
     private double totalAmount;
 
-    public Order(int orderId) {
+    public Order(String orderId) {
         this.orderId = orderId;
         this.items = new ArrayList<>();
         this.totalAmount = 0.0;
     }
 
-    public int getOrderId() {
+    public String getOrderId() {
         return orderId;
     }
 
@@ -21,6 +21,12 @@ public class Order {
 
     public double getTotalAmount() {
         return totalAmount;
+    }
+
+    public void order_items() {
+        for (Item item : items) {
+            System.out.println(item.getItemName() + " " + item.getAmount());
+        }
     }
 
     public void addItem(int itemId, Menu menu) {
