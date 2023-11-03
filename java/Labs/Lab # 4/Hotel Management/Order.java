@@ -23,7 +23,7 @@ public class Order {
         return totalAmount;
     }
 
-    public void order_items() {
+    public void ordered_items() {
         for (Item item : items) {
             System.out.println(item.getItemName() + " " + item.getAmount());
         }

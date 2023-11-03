@@ -264,7 +264,7 @@ public class HotelManagementSystem {
                             }
                             for (Order order2 : hotelManagement.getOrders()) {
                                 System.out.print("Order Id: " + order2.getOrderId());
-                                order2.order_items();
+                                order2.ordered_items();
                             }
                             break;
                         case 4:
