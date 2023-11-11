@@ -1,0 +1,213 @@
+#include<iostream>
+using namespace std;
+//int Mul(int x, int y)
+//{
+//    if (y == 0)
+//        return 0;
+//    else
+//        return (x + Mul(x, y - 1));
+//}
+//void main()
+//{
+//	int x,y;
+//	cout << "Enter Number 1 :";
+//	cin >> x;
+//	cout << "Enter Number 2 :";
+//	cin >> y;
+//	if (y > x)
+//		cout << "Multiply :" << Mul(y, x);
+//	else
+//	cout << "Multiply :" << Mul(x, y);
+//}
+
+//task 2
+//int power(int b, int e)
+//{
+//	
+//	if (e == 1)
+//	 return b;
+//   else
+//	 return (b * power(b, e-1));
+//}
+//void main()
+//{
+//	int b, e;
+//	cout << "Enter Base :";
+//	cin >> b;
+//	cout << "Enter Exponent :";
+//	cin >> e;
+//	cout <<"Answer :" << power(b, e);
+//}
+
+//task 3
+//int fact(int n)
+//{
+//	
+//	if (n == 1)
+//	 return n;
+//   else
+//	 return (n * fact(n-1));
+//}
+//void main()
+//{
+//	int n;
+//	cout << "Enter Number:";
+//	cin >> n;
+//	cout << fact(n);
+//}
+
+//task4
+
+//int fibonaci(int n)
+//{
+//    if (n <= 1)
+//        return n;
+//    return fibonaci(n - 1) + fibonaci(n - 2);
+//}
+//
+//void main()
+//{
+//    int n;
+//    cout << "Enter Limit :";
+//    cin >> n;
+//    cout<< fibonaci(n);
+//}
+
+//task 5
+//class Node {
+//public:
+//	int data;
+//	Node* next;
+//	Node(int val) {
+//		data = val;
+//		next = NULL;
+//	}
+//};
+//class LinkList {
+//public:
+//	Node* head;
+//	Node* tail;
+//	LinkList() {
+//		head = tail = NULL;
+//	}
+//
+//	void insertAtBegin(int val)
+//	{
+//		Node* temp = new Node(val);
+//		if (head == NULL) {
+//			head = tail = temp;
+//		}
+//		else {
+//			temp->next = head;
+//			head = temp;
+//		}
+//	}
+//	
+//};
+//bool SearchElement(Node *Node, int i)
+//{
+//	if (Node == NULL)
+//	{
+//		return false;
+//	}
+//	else
+//	{
+//		if (Node->data == i)
+//		{
+//			return true;
+//		}
+//		else
+//		{
+//			return SearchElement(Node->next, i);
+//		}
+//	}
+//}
+//void main()
+//{
+//	LinkList l1;
+//	l1.insertAtBegin(34);
+//	l1.insertAtBegin(23);
+//	l1.insertAtBegin(10);
+//	bool flag=SearchElement(l1.head, 70);
+//	if (flag == true)
+//		cout << "Found";
+//	else
+//		cout << "Not found";
+//}
+class Node {
+public:
+	int data;
+	Node* next;
+	Node(int val) {
+		data = val;
+		next = NULL;
+	}
+};
+class LinkList {
+public:
+	Node* head;
+	Node* tail;
+	LinkList() {
+		head = tail = NULL;
+	}
+
+	void insertAtBegin(int val)
+	{
+		Node* temp = new Node(val);
+		if (head == NULL) {
+			head = tail = temp;
+		}
+		else {
+			temp->next = head;
+			head = temp;
+		}
+	}
+
+};
+// task 7
+int findMax(Node* Node)
+{
+	static int max = 0;
+	if (Node == NULL)
+	{
+		return max;
+	}
+	else
+	{
+		if (Node->data > max)
+		{
+			max = Node->data;
+		}
+		return findMax(Node->next);
+	}
+}
+//task 6
+void insertAtTail(Node* node, int val)
+{
+	if (node->next == NULL)
+	{
+		Node* temp = new Node(val);
+		node->next = temp;
+	}
+	else
+	insertAtTail(node->next,val);
+}
+//task 8
+void printReverse(Node* head)
+{
+	if (head == NULL)
+		return;
+	printReverse(head->next);
+	cout << head->data << " ";
+}
+void main()
+{
+	    LinkList l1;
+		l1.insertAtBegin(34);
+		l1.insertAtBegin(23);
+		l1.insertAtBegin(10);
+		l1.insertAtBegin(70);
+		insertAtTail(l1.head, 90);
+		printReverse(l1.head);
+
+}

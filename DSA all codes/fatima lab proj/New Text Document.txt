@@ -1,0 +1,100 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
+
+class heap
+{
+    int Size;
+    string *array;
+
+public:
+    heap(int s = 30) : Size(s)
+    {
+        fstream infile("words.txt");
+        if (infile)
+        {
+            array = new string[Size];
+            array[0] = -1;
+            for (int i = 1; i < Size; i++)
+            {
+                infile >> array[i];
+            }
+
+            heapify(Size, 1);
+            cout << "[INFO]        The normal heap is: ";
+            for (int i = 1; i < Size; i++)
+            {
+                cout << array[i] << "  ";
+            }
+        }
+        else
+        {
+            cout << "[WARNING]        Error opening file ... !";
+        }
+        infile.close();
+    }
+    int left(int k)
+    {
+        return 2 * k;
+    }
+    int right(int k)
+    {
+        return 2 * k + 1;
+    }
+    void swap(string *a, string *b)
+    {
+        string temp = *a;
+        *a = *b;
+        *b = temp;
+    }
+    void heapify(int N, int i)
+    {
+        int largest = i;
+        if (left(i) < N && array[left(i)] > array[largest])
+            largest = left(i);
+        if (right(i) < N && array[right(i)] > array[largest])
+            largest = right(i);
+        if (largest != i)
+        {
+            swap(&array[i], &array[largest]);
+            heapify(N, largest);
+        }
+    }
+    void heapSort()
+    {
+        for (int i = Size / 2 - 1; i >= 1; i--)
+            heapify(Size, i);
+        for (int i = Size - 1; i >= 1; i--)
+        {
+            swap(&array[1], &array[i]);
+            heapify(i, 1);
+        }
+    }
+    void display()
+    {
+        for (int i = 0; i < Size; i++)
+            cout << array[i] << "\n";
+        cout << "\n";
+    }
+    ~heap()
+    {
+        ofstream outfile("sortedWords.txt");
+        for (int i = 0; i < Size; i++)
+            outfile << array[i] << "\n";
+        cout << "[INFO]       File created with sorted words ... !" << endl;
+    }
+};
+
+int main()
+{
+    cout << "Enter the Size of Array: ";
+    int size;
+    cin >> size;
+    heap obj(size);
+    obj.heapSort();
+    cout<<"\n##################################################################################################"<<endl;
+    cout << "\nSorted array is: ";
+    obj.display();
+}
